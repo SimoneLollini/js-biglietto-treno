@@ -1,3 +1,13 @@
 body {
     background-color: rgba(157, 64, 64, 0.639);
 }
+
+.container {
+    width: 60%;
+    margin: auto;
+    margin-top: 10%;
+    background-color: lightgrey;
+    border-radius: 20px;
+    text-align: center;
+    padding: 1rem 0 3rem 0;
+}

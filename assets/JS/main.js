@@ -10,7 +10,7 @@ const passengerAge = prompt("Quanti anni hai?")
 
 // Sulla base di queste informazioni dovrà calcolare il prezzo totale del viaggio
 // il prezzo del biglietto è definito in base ai km (0.21 € al km)
-const price = (kmPercorsi * 0.21)
+const price = (kmPercorsi * 1)
 
 // va applicato uno sconto del 20% per i minorenni
 const discountUnder = (price * 0.20);
@@ -20,17 +20,17 @@ const discountOver = (price * 0.40);
 
 if (passengerAge < 18) {
     const finalPriceUnder = price - discountUnder
-    console.log(finalPriceUnder.toFixed(2));
-    document.getElementById('ticket_price').innerHTML = (finalPriceUnder + " " + "€")
+    // console.log(finalPriceUnder.toFixed(2));
+    document.getElementById('ticket_price').innerHTML = (finalPriceUnder.toFixed(2) + " " + "€")
 
 } else if (passengerAge > 65) {
     const finalPriceOver = price - discountOver
-    console.log(finalPriceOver.toFixed(2));
-    document.getElementById('ticket_price').innerHTML = (finalPriceOver + " " + "€")
+    // console.log(finalPriceOver.toFixed(2));
+    document.getElementById('ticket_price').innerHTML = (finalPriceOver.toFixed(2) + " " + "€")
 
 } else {
-    console.log(price.toFixed(2));
-    document.getElementById('ticket_price').innerHTML = (price + " " + "€")
+    // console.log(price.toFixed(2));
+    document.getElementById('ticket_price').innerHTML = (price.toFixed(2) + " " + "€")
 }
 
 

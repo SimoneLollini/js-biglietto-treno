@@ -16,7 +16,7 @@ console.log(price);
 if (passengerAge < 18) {
     console.log(price * 0.20);
 } else if (passengerAge > 65) {
-    console.log("priceOver");
+    console.log(price * 0.40);
 }
 // va applicato uno sconto del 40% per gli over 65.
 // L'output del prezzo finale va messo fuori in forma umana con massimo due decimali.
